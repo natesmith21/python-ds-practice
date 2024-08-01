@@ -18,3 +18,28 @@ def sum_up_diagonals(matrix):
         >>> sum_up_diagonals(m2)
         30
     """
+
+    to_sum = []
+    y = -1
+
+    for lst in matrix:
+        x = matrix.index(lst)
+        to_sum.append(lst[x])
+        to_sum.append(lst[y])
+        # print(f'(x,y) = {lst[x], lst[y]}')
+        y+= -1
+    return sum(to_sum)
+
+        # to_sum = []
+
+    # for lst in matrix:
+    #     x = matrix.index(lst)
+    #     y = (len(matrix) - x) - 1 
+    #     print(f' (x, y) = {x, y}')
+    #     print(f'{lst[x], lst[-y]}')
+    #     to_sum.append(lst[x])
+    #     to_sum.append(lst[-y])
+
+
+    
+

@@ -30,3 +30,15 @@ def includes(collection, sought, start=None):
         >>> includes({"apple": "red", "berry": "blue"}, "blue")
         True
     """
+
+    trimmed_collection = collection[start:]
+
+    for item in trimmed_collection:
+        if item == sought:
+            return True
+        else:
+            return False
+        
+        # this seemd to work just fine using ipython, but not when I test it in the terminal 
+
+        

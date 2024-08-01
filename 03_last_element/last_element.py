@@ -7,3 +7,14 @@ def last_element(lst):
         >>> last_element([]) is None
         True
     """
+
+    # duh nate -1 is the last index in python 
+
+    last = len(lst) - 1 
+
+    if lst:
+        return lst[last]
+    else:
+        return None
+
+        

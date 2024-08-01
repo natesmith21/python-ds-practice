@@ -23,3 +23,11 @@ def sum_range(nums, start=0, end=None):
         >>> sum_range(nums, 1, 99)
         9
     """
+    if end == None:
+        trimmed_list = nums[start:]
+    else: 
+        trimmed_list = nums[start: end + 1]
+
+    return sum(trimmed_list)
+
+# i'm not sure if this is really the best way to do this 
